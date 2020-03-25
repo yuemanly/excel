@@ -146,7 +146,7 @@
 
 1. 计算字段
 
-    ![c1](https://github.com/yuemanly/excel/blob/master/c1.jpg "c1")
+    ![image](https://github.com/yuemanly/excel/blob/master/c1.jpg "c1")
     ![c2](c2.jpg "c2")
     ![c3](c3.jpg "c3")
     ![c4](c4.jpg "c4")
