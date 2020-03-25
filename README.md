@@ -85,14 +85,18 @@
 1. 信息提取
    
     LEFT、MID、RIGHT(text)函数
+    
+    提取单元格里的中文
     ![left](./left.jpg "left")
 
 2. 逻辑判断
 
     IF(逻辑判断,为真返回值,为假返回值)函数
+    判断一个值是否大于5
     ![if](./if.jpg "if")
 
     IFERROR(text,前一个为假则返回)函数
+    当值出错时，返回另一个值（可用于屏蔽错误）
     ![iferror](./iferror.jpg "iferror")
 ## 日期和时间的计算
 
@@ -112,6 +116,7 @@
    ![vlookup1](vlookup1.jpg "vlookup1")
 
     模糊匹配
+    模糊匹配时匹配不到查找值时，会返回比查找值小的最接近的值
    ![vlookup2](vlookup2.jpg "vlookup2")
 
 
@@ -120,16 +125,18 @@
 1. COUNTIF(统计范围,统计逻辑)函数
    
    筛选不重复数据
+   把Q列不重复的筛出来，筛选1的就是不重复的数据
    ![countif1](countif1.jpg "countif1")
 
-   统计不重复的蔬菜有哪些
+   统计不重复的蔬菜有几种
    ![countif2](countif2.jpg "countif2")
 
 
 # 数据透视表
 ## 数据更新和布局
 1. 更新和布局
-
+    
+    可以把数据布局为你想要的方式
     ![layout](layout.jpg "layout")
 
     ![layout2](layout2.jpg "layout2")
@@ -137,15 +144,18 @@
 ## 排序和筛选
 1. 排序
    
+   这个和普通的排序一样
    ![rank](rank.jpg "rank")
 
 2. 筛选
 
+    这个和普通的筛选一样
    ![choice](choice.jpg "choice")
 ## 计算字段
 
 1. 计算字段
-
+    
+    新生成一个你想要的计算后的字段，用于数据表展示
     ![c1](c1.jpg "c1")
     ![c2](c2.jpg "c2")
     ![c3](c3.jpg "c3")
