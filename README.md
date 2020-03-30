@@ -26,24 +26,20 @@
 
     ![date](./date.png "date")
 ## 引用
-   | 引用类型 | 样式 | 特性 |
-   | ---- | ---- | ---- |
-   |绝对引用| =$A$1 | 公式向右向下不改变引用关系 |
-   |相对引用| =A1 | 公式向右向下都改变引用关系 |
-   |行绝对引用列相对引用| =$A1 | 公式向右不改变引用关系，向下改变引用关系|
-   |行相对引用列绝对引用| =A$1 | 公式向右改变引用关系，向下不改变引用关系|
+   $ 美元符号后面的行或者列在进行拖动时不会变
+   
+   e.g. 九九乘法表
+   
+   ![](99_0.jpg)
+   ![](99_1.jpg)
 
 ## 快捷键
    | 执行操作 | 快捷键组合 |
    | ---- | ---- |
    | 重复最后一次操作 | F4 |
    | 选择区域扩展到同行最后的非空单元格 | Ctrl + Shift + 箭头|
-   | 撤销 | Ctrl + Z |
-   | 复制 | Ctrl + C |
-   | 粘贴 | Ctrl + V |
-   | 保存 | Ctrl + S |
-   | 字体加粗 | Ctrl + B |
-   | 选定当前有活动单元格的区域 | Ctrl + A |
+   | 刷成同样的格式 | 格式刷 |
+   
 
 # 常用函数
 ## 文本数据处理
@@ -53,15 +49,15 @@
     ![concat](./concat1.jpg "concat1")
     ![concat](./concat2.jpg "concat2")
 2. 展示重复项
-
+    把重复的单元格标红
     ![repeat](./repeat.jpg "repeat")
 
 3. 删除重复项
-
+    把列里重复的行删掉
     ![repeat2](./repeat2.jpg "repeat2")
 
 4. 分列
-
+    把单元格里合并的值分开
     ![slit1](./slit1.jpg "slit1")
     ![slit2](./slit2.jpg "slit2")
 
@@ -80,24 +76,43 @@
     NUMBERVALUE(text)函数
     ![format](./format.jpg)
 
+8. 自定义排序筛选
+
+    对多行进行排序
+    ![](./s_rank0.jpg)
+    ![](./s_rank1.jpg)
+    
+    筛选号码大于14000000000
+    ![](./s-c1.jpg)
+    ![](./s-c2.jpg)
+    
+9. 分组
+    
+    对数据进行分组
+    ![](./group.jpg)
+    
+    
+    
+
 ## 信息提取与逻辑判断
 
 1. 信息提取
    
     LEFT、MID、RIGHT(text)函数
+    提取第一个字
+    ![left](./left0.jpg "left")
     
-    提取单元格里的中文
-    ![left](./left.jpg "left")
 
 2. 逻辑判断
 
     IF(逻辑判断,为真返回值,为假返回值)函数
     判断一个值是否大于5
-    ![if](./if.jpg "if")
+    ![if](./if0.jpg "if")
 
     IFERROR(text,前一个为假则返回)函数
     当值出错时，返回另一个值（可用于屏蔽错误）
-    ![iferror](./iferror.jpg "iferror")
+    ![iferror](./iferror0.jpg "iferror")
+    
 ## 日期和时间的计算
 
 1. 日期
@@ -123,45 +138,47 @@
 ## 统计和求和
 
 1. COUNTIF(统计范围,统计逻辑)函数
-   
-   筛选不重复数据
-   把Q列不重复的筛出来，筛选1的就是不重复的数据
-   ![countif1](countif1.jpg "countif1")
+  
+    统计大于3的数的个数
+    ![countif](countif.jpg "countif")
+2. SUMIF(统计范围,统计逻辑)函数
 
-   统计不重复的蔬菜有几种
-   ![countif2](countif2.jpg "countif2")
+    求大于3的数的和
+    ![countif](countif.jpg "countif")
+
 
 
 # 数据透视表
+
+数据透视表主要作用是用于数据汇总和展示
 ## 数据更新和布局
-1. 更新和布局
+1. 创建和布局
+    
+    创建数据透视表
+    ![](create0.jpg)
     
     可以把数据布局为你想要的方式
-    ![layout](layout.jpg "layout")
+    ![layout](layout3.jpg)
 
-    ![layout2](layout2.jpg "layout2")
 
 ## 排序和筛选
 1. 排序
    
    这个和普通的排序一样
-   ![rank](rank.jpg "rank")
+   ![rank](rank0.jpg "rank")
+   ![rank](rank1.jpg "rank")
 
 2. 筛选
 
     这个和普通的筛选一样
-   ![choice](choice.jpg "choice")
+   ![choice](choice0.jpg "choice")
+   ![choice](choice1.jpg "choice")
 ## 计算字段
 
 1. 计算字段
-<<<<<<< HEAD
     
     新生成一个你想要的计算后的字段，用于数据表展示
-    ![c1](c1.jpg "c1")
-=======
-
-    ![image](https://github.com/yuemanly/excel/blob/master/c1.jpg "c1")
->>>>>>> 88a892ddc24f2e4baf0021e8fb830e5c5b745a51
-    ![c2](c2.jpg "c2")
-    ![c3](c3.jpg "c3")
-    ![c4](c4.jpg "c4")
+    ![](c5.jpg)
+    ![](c6.jpg)
+    ![](c7.jpg)
+    ![](c8.jpg)
